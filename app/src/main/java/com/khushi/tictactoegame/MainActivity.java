@@ -3,6 +3,7 @@ package com.khushi.tictactoegame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -57,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
         final String getPlayerOneName = getIntent().getStringExtra("playerOne");
         final String getPlayerTwoName = getIntent().getStringExtra("playerTwo");
+
+        Log.e("TAG", "onCreate: ",null );
 
         playerOneName.setText(getPlayerOneName);
         playerTwoName.setText(getPlayerTwoName);
